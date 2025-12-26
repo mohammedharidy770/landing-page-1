@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
   background: #cccccc;
   color: #222;
-    line-height: 1.8;        /* تباعد بين السطور */
-  letter-spacing: 0.3px;  /* تباعد خفيف بين الحروف */
+  line-height: 1.8;        /* تباعد بين السطور */
+  letter-spacing: 0.3px;   /* تباعد خفيف بين الحروف */
 }
 
 /* Navbar */
@@ -101,22 +101,24 @@ body {
   max-width: 800px;
   padding: 20px;
 }
+
 .btn {
-    background: #ffc107;
-    color: #000;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-    transition: all 0.3s ease;
-    margin: 10px;
+  background: #ffc107;
+  color: #000;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin: 10px;
 }
 
 .btn:hover {
-    transform: scale(1.1) rotate(-2deg);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
+
 /* Sections */
 .section {
   padding: 80px 20px;
@@ -209,4 +211,67 @@ footer {
 
 @keyframes pulse {
   50% { transform: scale(1.05); }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 10px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    height: 70vh;
+    padding: 0 10px;
+  }
+
+  .hero-content {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 12px 25px;
+    font-size: 14px;
+    margin: 8px 0;
+  }
+
+  .section {
+    padding: 60px 10px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stats span {
+    font-size: 28px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  input, textarea {
+    padding: 12px;
+  }
 }
